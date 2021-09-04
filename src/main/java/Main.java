@@ -1,6 +1,6 @@
+import LoginCases.Case02;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
@@ -20,10 +20,18 @@ public class Main {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         driver.get("http://automationpractice.com/index.php");
+        
+        case01(driver);
+        Case02.case02(driver);
 
         driver.close();
     }
 
+    private static void case01(WebDriver driver) {
+        System.out.println("Test: Case01");
+        driver.findElement(By.className("logo"));
+        driver.findElement(By.className("sf-menu"));
+    }
 
 
 }
