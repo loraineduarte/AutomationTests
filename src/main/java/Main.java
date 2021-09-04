@@ -1,6 +1,7 @@
-import LoginCases.Case02;
+import LoginCases.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
@@ -22,9 +23,23 @@ public class Main {
         driver.get("http://automationpractice.com/index.php");
         
         case01(driver);
-        Case02.case02(driver);
+//        Case02.case02(driver);
+//        returnToInitialPage(driver);
+//        Case03.case03(driver);
+//        returnToInitialPage(driver);
+//        Case04.case04(driver);
+//        returnToInitialPage(driver);
+//        Case05.case05(driver);
+//        returnToInitialPage(driver);
+        Case06.case06(driver);
 
         driver.close();
+    }
+
+    private static void returnToInitialPage(WebDriver driver) {
+        WebElement logo = driver.findElement(By.className("logo"));
+        logo.click();
+        driver.manage().timeouts().implicitlyWait(200, TimeUnit.SECONDS);
     }
 
     private static void case01(WebDriver driver) {

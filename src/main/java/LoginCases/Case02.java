@@ -17,6 +17,8 @@ public class Case02 {
         driver.findElement(By.className("page-heading"));
         driver.findElement(By.id("create-account_form"));
         driver.findElement(By.id("login_form"));
+        driver.findElement(By.id("email"));
+        driver.findElement(By.id("passwd"));
 
         //Testing email field
         testEmailFieldCase1(driver);
@@ -45,7 +47,7 @@ public class Case02 {
         result = result.toLowerCase();
 
         if(result.contains("invalid") || result.contains("email") ) {
-            System.out.println("LoginCases.Case02: Error returned correctly ");
+            System.out.println("Case02: Error returned correctly ");
         } else {
             System.out.println("Message of error is wrong ");
         }
@@ -65,7 +67,7 @@ public class Case02 {
         result = result.toLowerCase();
 
         if(result.contains("invalid") || result.contains("email") ) {
-            System.out.println("LoginCases.Case02: Error returned correctly ");
+            System.out.println("Case02: Error returned correctly ");
         } else {
             System.out.println("Message of error is wrong ");
         }
@@ -88,7 +90,7 @@ public class Case02 {
         result = result.toLowerCase();
 
         if(result.contains("invalid") || result.contains("failed")) {
-            System.out.println("LoginCases.Case02: Error returned correctly");
+            System.out.println("Case02: Error returned correctly");
         } else {
             System.out.println("Message of error is wrong");
         }
