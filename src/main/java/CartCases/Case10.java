@@ -19,9 +19,8 @@ public class Case10 {
         submitLogin.click();
 
         driver.manage().timeouts().implicitlyWait(200, TimeUnit.SECONDS);
-        driver.findElement(By.className("navigation_page"));
-        driver.findElement(By.className("content_scene_cat"));
-        driver.findElement(By.id("subcategories"));
+        driver.findElement(By.id("image-block"));
+        driver.findElement(By.id("product_reference"));
 
         WebElement logo = driver.findElement(By.className("logo"));
         logo.click();
