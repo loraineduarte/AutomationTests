@@ -1,3 +1,4 @@
+import CartCases.Case10;
 import LoginCases.Case08;
 import LoginCases.Case09;
 import org.openqa.selenium.By;
@@ -41,6 +42,8 @@ public class Main {
         //Case08.case08(driver);
         returnToInitialPage(driver);
         Case09.case09(driver);
+        returnToInitialPage(driver);
+        Case10.case10(driver);
 
         driver.close();
     }
