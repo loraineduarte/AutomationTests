@@ -1,4 +1,5 @@
-import LoginCases.*;
+import LoginCases.Case08;
+import LoginCases.Case09;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -21,7 +22,9 @@ public class Main {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         driver.get("http://automationpractice.com/index.php");
-        
+
+
+        //Atenção - Quando for rodar os testes não esquecer de colocar um usuário novo nos casos de teste 05, 06 e 07
         case01(driver);
 //        Case02.case02(driver);
 //        returnToInitialPage(driver);
@@ -31,7 +34,13 @@ public class Main {
 //        returnToInitialPage(driver);
 //        Case05.case05(driver);
 //        returnToInitialPage(driver);
-        Case06.case06(driver);
+        //Case06.case06(driver);
+        //returnToInitialPage(driver);
+        //Case07.case07(driver);
+        //returnToInitialPage(driver);
+        //Case08.case08(driver);
+        returnToInitialPage(driver);
+        Case09.case09(driver);
 
         driver.close();
     }
