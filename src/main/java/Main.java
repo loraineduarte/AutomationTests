@@ -1,6 +1,7 @@
 import CartCases.Case10;
 import CartCases.Case11;
 import CartCases.Case12AndCase13;
+import CheckoutCases.Case14;
 import LoginCases.Case09;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -50,6 +51,7 @@ public class Main {
         returnToInitialPage(driver);
         Case12AndCase13.case12(driver);
         returnToInitialPage(driver);
+        Case14.case14(driver);
 
         driver.close();
     }

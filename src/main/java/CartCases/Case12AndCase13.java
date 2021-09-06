@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Case12AndCase13 {
     public static void case12(WebDriver driver) {
-        System.out.println("Test: Case12");
+        System.out.println("Test: Case12 and Case 13");
 
         WebElement moreButton = driver.findElement(By.partialLinkText("More"));
         moreButton.click();
