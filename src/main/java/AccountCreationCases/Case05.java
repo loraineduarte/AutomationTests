@@ -18,7 +18,7 @@ public class Case05 {
         driver.findElement(By.id("create-account_form"));
         driver.findElement(By.id("login_form"));
         WebElement email = driver.findElement(By.id("email_create"));
-        email.sendKeys("teste4566@hotmail.com");
+        email.sendKeys("teste112233@hotmail.com");
         WebElement submitLogin = driver.findElement(By.id("SubmitCreate"));
         submitLogin.click();
 
@@ -28,5 +28,6 @@ public class Case05 {
         driver.findElement(By.className("std"));
 
 
+        Case06.case06(driver);
     }
 }

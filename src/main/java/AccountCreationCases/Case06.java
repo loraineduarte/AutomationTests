@@ -10,17 +10,6 @@ public class Case06 {
     public static void case06(WebDriver driver) {
         System.out.println("Test: Case06");
 
-        WebElement signInButton = driver.findElement(By.className("login"));
-        signInButton.click();
-
-        driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
-
-        //Atention - Change this everytime of the run to put a new person on the system
-        WebElement email = driver.findElement(By.id("email_create"));
-        email.sendKeys("test4555@hotmail.com");
-        WebElement submitLogin = driver.findElement(By.id("SubmitCreate"));
-        submitLogin.click();
-
         //Testing fields
         caseAllFieldsEmpty(driver);
         caseCustomerFirstNameFieldError(driver);
@@ -30,6 +19,8 @@ public class Case06 {
         caseCityFieldError(driver);
         caseZipCodeFieldError(driver);
         casePhoneNumberFieldError(driver);
+
+        Case07.case07(driver);
     }
 
     private static void caseAllFieldsEmpty(WebDriver driver) {

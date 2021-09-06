@@ -1,8 +1,16 @@
+import AccountCreationCases.Case04;
+import AccountCreationCases.Case05;
+import AccountCreationCases.Case06;
+import AccountCreationCases.Case07;
 import CartCases.Case10;
 import CartCases.Case11;
 import CartCases.Case12AndCase13;
 import CheckoutCases.Case14;
+import CheckoutCases.Case15andCase16;
+import LoginCases.Case08;
 import LoginCases.Case09;
+import LoginWithoutAccountCases.Case02;
+import LoginWithoutAccountCases.Case03;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -27,21 +35,17 @@ public class Main {
         driver.get("http://automationpractice.com/index.php");
 
 
-        //Atenção - Quando for rodar os testes não esquecer de colocar um usuário novo nos casos de teste 05, 06 e 07
+        //Atenção - Quando for rodar os testes não esquecer de colocar um usuário novo nos casos de teste 05
         case01(driver);
-//        Case02.case02(driver);
-//        returnToInitialPage(driver);
-//        Case03.case03(driver);
-//        returnToInitialPage(driver);
-//        Case04.case04(driver);
-//        returnToInitialPage(driver);
-//        Case05.case05(driver);
-//        returnToInitialPage(driver);
-        //Case06.case06(driver);
-        //returnToInitialPage(driver);
-        //Case07.case07(driver);
-        //returnToInitialPage(driver);
-        //Case08.case08(driver);
+        Case02.case02(driver);
+        returnToInitialPage(driver);
+        Case03.case03(driver);
+        returnToInitialPage(driver);
+        Case04.case04(driver);
+        returnToInitialPage(driver);
+        Case05.case05(driver);
+        returnToInitialPage(driver);
+        Case08.case08(driver);
         returnToInitialPage(driver);
         Case09.case09(driver);
         returnToInitialPage(driver);
@@ -52,6 +56,9 @@ public class Main {
         Case12AndCase13.case12(driver);
         returnToInitialPage(driver);
         Case14.case14(driver);
+        returnToInitialPage(driver);
+        Case15andCase16.case15(driver);
+        Case15andCase16.case16(driver);
 
         driver.close();
     }
